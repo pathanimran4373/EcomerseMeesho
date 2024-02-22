@@ -1,0 +1,48 @@
+import { SearchContextProvider } from "../../../../GlobalContext/Context/FilterProducts";
+import { useContext } from "react";
+import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import Stars from "../../../common/component/rating";
+const Product = () => {
+  const { ProductpageData } = useContext(SearchContextProvider);
+
+  return (
+    <>
+      <div className="greed-section">
+        {ProductpageData.map((element) => {
+          return (
+            <Link
+              style={{ textDecoration: "none" }}
+              className="product-link"
+              to={`/productdetail/${element.id}`}
+            >
+              <div className="greed-product-box" key={element.id}>
+                <figure className="imageContainer">
+                  {/* <LazyLoadImage
+                    alt={element.name}
+                    effect="opacity"
+                    src={element.image}
+                    height={200}
+                    width={200}
+                    className="productImage"
+                  /> */}
+                  <img className='product-image' src={element.image} loading='lazy' alt="product" />
+                </figure>
+
+                <h3>{element.name}</h3>
+                <Stars stars={element.stars} reviews={element.reviews} />
+
+                <div className="cart-btn">
+                  <p>$.{element.price}</p>
+                  <button className="view-btn">view details</button>
+                </div>
+              </div>
+            </Link>
+          );
+        })}
+      </div>
+    </>
+  );
+};
+
+export default Product;

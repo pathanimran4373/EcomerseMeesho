@@ -1,0 +1,83 @@
+.Meesho_Supplier_Container {
+  margin: 20px auto;
+  width: 90%;
+  height: 268px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://images.meesho.com/images/pow/supplyBannerDesktop.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.meesho_benifit_Image {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.mesho_supplier-benifit {
+  display: flex;
+  align-items: center;
+  padding: 0px 40px;
+  border-right: 2px solid white;
+  height: 25px;
+}
+.mesho_supplier-benifit:first-child {
+  padding: 0;
+  padding-right: 40px;
+}
+.Meesho_Supplier_benifit_Container {
+  display: flex;
+  align-items: center;
+  margin: 40px 0px;
+}
+.Meesho_Supplier_Container {
+  position: relative;
+}
+.Meesho_Supplier_content p {
+  font-size: 2rem;
+}
+.Meesho_Supplier_container_content {
+  position: absolute;
+  top: 0;
+  padding: 20px 20px;
+  color: white;
+}
+.Signup_btn_now {
+  background-color: white;
+  color: var(--hoverTextColor);
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* media query for mobile device */
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 35%;
+  }
+  .Meesho_Supplier_Container {
+    background-position: center;
+  }
+  .Meesho_Supplier_container_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .Meesho_Supplier_benifit_Container {
+    justify-content: center !important;
+    margin-left: 20px;
+    padding-left: 10px;
+  }
+  .meesho_benifit_Image {
+    margin-right: 5px;
+  }
+}
