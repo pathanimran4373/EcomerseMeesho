@@ -1,8 +1,6 @@
-
 import React, { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import PageNotFound from "./modules/dashbord/component/PageNotFound";
+import Loading from "./modules/common/component/loadingPage/Loading";
 import HomeContent from "./modules/dashbord/component/HomeContent";
 import Header from "./modules/common/component/header";
 
@@ -10,8 +8,11 @@ import Header from "./modules/common/component/header";
 const SignUp = lazy(() => import("./modules/auth/component/signup"));
 const LogIn = lazy(() => import("./modules/auth/component/login"));
 const Product = lazy(() => import("./modules/dashbord/component/Product"));
-const ProductDescription = lazy(() => import("./modules/dashbord/component/productDetail"));
+const ProductDescription = lazy(() =>
+  import("./modules/dashbord/component/productDetail")
+);
 const CartPage = lazy(() => import("./modules/dashbord/component/Cart"));
+const PageNotFound = lazy(() => import("./modules/dashbord/component/PageNotFound"));
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
           <Route
             path="/signup"
             element={
-              <Suspense fallback={<span>Loading.......</span>}>
+              <Suspense fallback={<Loading />}>
                 <SignUp />
               </Suspense>
             }
@@ -31,7 +32,7 @@ function App() {
           <Route
             path="/login"
             element={
-              <Suspense fallback={<span>Loading...........</span>}>
+              <Suspense fallback={<Loading />}>
                 <LogIn />
               </Suspense>
             }
@@ -39,7 +40,7 @@ function App() {
           <Route
             path="/product"
             element={
-              <Suspense fallback={<span>Loading..........</span>}>
+              <Suspense fallback={<Loading />}>
                 <Product />
               </Suspense>
             }
@@ -47,7 +48,7 @@ function App() {
           <Route
             path="/productdetail/:id"
             element={
-              <Suspense fallback={<span>Loading..........</span>}>
+              <Suspense fallback={<Loading />}>
                 <ProductDescription />
               </Suspense>
             }
@@ -55,12 +56,19 @@ function App() {
           <Route
             path="/cart"
             element={
-              <Suspense fallback={<span>Loading..........</span>}>
+              <Suspense fallback={<Loading />}>
                 <CartPage />
               </Suspense>
             }
           />
-          <Route path="*" element={<PageNotFound />} />
+          <Route
+            path="*"
+            element={
+              <Suspense fallback={<Loading />}>
+                <PageNotFound />
+              </Suspense>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </div>
@@ -68,4 +76,3 @@ function App() {
 }
 
 export default App;
-
