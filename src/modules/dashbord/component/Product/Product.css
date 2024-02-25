@@ -192,6 +192,7 @@
   height: 20px;
   margin-left: 10px;
   background-color: var(--hoverTextColor);
+  border-radius: 5px;
 }
 
 /* sort product  by prices*/
@@ -327,4 +328,5 @@
   .imageContainer {
     width: 150px !important;
   }
+  /* list view */
 }

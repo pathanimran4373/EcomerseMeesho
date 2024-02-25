@@ -56,7 +56,30 @@
     height: 30px;
     background-color: var(--hoverTextColor);
     padding: 2px;
+    border-radius: 5px;
 }
 .cart-btn-listView:hover {
   color: white;
+}
+@media only screen and (max-width:768px){
+    .list-product-box {
+        
+        flex-direction: column !important;
+        height: auto;
+        width: 100%;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 10px;
+        border: 1px solid gray;
+    }
+    .figure-tag {
+        margin: 0 !important;
+        height: 100%;
+        width: 200px !important;
+        
+    }
+    .figure-tag img{
+        width: 100% !important;
+        height: 100%;
+    }
 }

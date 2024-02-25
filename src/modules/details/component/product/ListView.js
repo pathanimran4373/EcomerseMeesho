@@ -19,14 +19,15 @@ const ListView = () => {
             >
               <div className="list-product-box">
                 <figure className="figure-tag">
-                  {/* <img src={element.image} loading='lazy' alt="product" /> */}
-                  <LazyLoadImage
+                  <img src={element.image} loading='lazy' alt="product" />
+                  {/* <LazyLoadImage
                     alt={element.name}
                     effect="blur"
                     src={element.image}
                     width={200}
                     height={200}
-                  />
+                    className="list-product-image"
+                  /> */}
                 </figure>
                 <div className="product-details-ofListview">
                   <h3>{element.name}</h3>
