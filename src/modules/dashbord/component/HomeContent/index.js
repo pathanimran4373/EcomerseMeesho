@@ -1,5 +1,8 @@
 import React, { Suspense, lazy } from "react";
 import HomePage from "../HomePage/HomePage";
+import LoadingCircle from "../../../common/component/loadingPage/Loading";
+
+// lazy loading component
 const Carosal = lazy(() => import("../carousel/Carousal"));
 const Banner = lazy(()=> import("../suppliarBanner"))
 const Product = lazy(() => fakeDelay(import("../Product")));
@@ -14,16 +17,16 @@ const HomeContent = () => {
   return (
     <>
       <HomePage />
-      <Suspense fallback={<h1>Loading..................</h1>}>
+      <Suspense fallback={<LoadingCircle/>}>
         <Carosal />
       </Suspense>
-      <Suspense fallback={<h1>Loading..................</h1>}>
+      <Suspense fallback={<LoadingCircle/>}>
         <Banner />
       </Suspense>
-      <Suspense fallback={<h1>Loading..................</h1>}>
+      <Suspense fallback={<LoadingCircle/>}>
         <Product />
       </Suspense>
-      <Suspense fallback={<h1>Loading..................</h1>}>
+      <Suspense fallback={<LoadingCircle/>}>
         <Footer />
       </Suspense>
     </>
