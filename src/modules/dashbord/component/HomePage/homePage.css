@@ -78,7 +78,7 @@
 /* home page right side image */
 .lowestPrice_image {
   flex: 1 1 40%;
-  margin: 10px;
+  margin: 10px 10px 10px 90px;
 }
 .lowestPrice_image img {
   width: 80%;
