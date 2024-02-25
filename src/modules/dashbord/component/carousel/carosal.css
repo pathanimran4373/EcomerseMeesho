@@ -169,6 +169,7 @@
   .carousal-container {
     margin: 10px auto !important;
     height: 40vh !important;
+    margin-top: -300px !important;
   }
   .topCategoriesImage {
     background-size: contain;

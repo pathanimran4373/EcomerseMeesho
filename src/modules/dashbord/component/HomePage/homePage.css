@@ -1,17 +1,15 @@
 .lowestpriceContainer {
   display: flex;
-  justify-content: center;
+  justify-content:space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin: auto;
-  max-width: 1100px;
   width: 100%;
+  height: 90vh;
 }
 .lowestPrice_texe {
-  flex: 1 1 25%;
-  width: 50%;
-  padding: 25px 0 0 25px;
-  margin: 10px;
+  flex: 1 1 70px;
+  padding: 30px;
+  margin: 10px 20px 10px 60px;
 }
 .lowestpriceContainer h1 {
   font-size: 4rem;
@@ -77,12 +75,14 @@
 
 /* home page right side image */
 .lowestPrice_image {
-  flex: 1 1 40%;
-  margin: 10px 10px 10px 90px;
+  flex: 1 1 100px;
+  height: 70vh;
+
 }
 .lowestPrice_image img {
-  width: 80%;
-  height: 70vh;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   aspect-ratio: 1/1;
 }
 
@@ -92,7 +92,9 @@
   }
   .lowestpriceContainer {
     flex-direction: column-reverse;
-    margin-top: -700px !important;
+    /* margin-top: -750px !important; */
+    top:15%;
+    position: absolute;
   }
   /* home page right side image */
 
@@ -104,6 +106,7 @@
   .lowestPrice_texe {
     width: 100%;
     margin: 0 !important;
+    margin-top: -200px !important;
   }
   
 }
