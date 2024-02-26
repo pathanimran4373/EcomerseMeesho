@@ -166,10 +166,13 @@
   html {
     font-size: 35%;
   }
+  .carousal-section{
+    margin-top: -300px !important;
+
+  }
   .carousal-container {
     margin: 10px auto !important;
     height: 40vh !important;
-    margin-top: -300px !important;
   }
   .topCategoriesImage {
     background-size: contain;

@@ -5,16 +5,16 @@ function Carosal() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const items = [
-        {
-            id: 1,
-            content: (
-                <div className="topCategoriesImage">
-                    <img src="https://images.meesho.com/images/marketing/1649760442043.webp" loading="lazy" alt='product_image'/>
-                    <img src="https://images.meesho.com/images/marketing/1649760423313.webp" loading="lazy" alt='product_image'/>
-                    <img src="https://images.meesho.com/images/marketing/1649759799809.webp" loading="lazy" alt='product_image'/>
-                </div>
-            )
-        },
+        // {
+        //     id: 1,
+        //     content: (
+        //         <div className="topCategoriesImage">
+        //             <img src="https://images.meesho.com/images/marketing/1649760442043.webp" loading="lazy" alt='product_image'/>
+        //             <img src="https://images.meesho.com/images/marketing/1649760423313.webp" loading="lazy" alt='product_image'/>
+        //             <img src="https://images.meesho.com/images/marketing/1649759799809.webp" loading="lazy" alt='product_image'/>
+        //         </div>
+        //     )
+        // },
         {
             id: 2,
             content: (
@@ -67,7 +67,7 @@ function Carosal() {
     }, [currentIndex, items.length]);
 
     return (
-        <>
+        <div className='carousal-section'>
             <div className="topCategoriesHeading">
                 <span className="horizontalLine"></span>
                 <h1>Top Categories to choose from</h1>
@@ -84,7 +84,7 @@ function Carosal() {
                     );
                 })}
             </div>
-        </>
+        </div>
     );
 }
 
