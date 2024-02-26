@@ -30,6 +30,7 @@
 .right-product-container {
   width: calc(100% - 23%);
   padding: 20px;
+
 }
 
 /* filter product by input */
@@ -230,7 +231,10 @@
 
 /* Media query for mobile devices */
 @media only screen and (max-width: 768px) {
+  .right-product-container {
+margin: 5px auto !important;
   
+}
   .product-layout-page {
     margin-top: 10px;
   }
@@ -318,6 +322,7 @@
 
   .greed-section {
     gap: 15px;
+    justify-content: center;
   }
   .greed-product-box {
     margin: 0;
