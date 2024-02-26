@@ -327,13 +327,15 @@ padding: 0 !important;
     gap: 5px;
     justify-content: center;
     margin: 0 !important;
-    background-color: aqua;
     width: 100%;
     padding: 0 !important;
   }
   .greed-product-box {
     margin: 0;
     width: 180px;
+  }
+  .greed-product-box h2{
+    font-size: 15px;
   }
   .imageContainer {
     width: 150px !important;

@@ -29,7 +29,7 @@ const Product = () => {
                   <img className='product-image' src={element.image} loading='lazy' alt="product" width="600" height="650"  />
                 </figure>
 
-                <h1>{element.name}</h1>
+                <h2>{element.name}</h2>
                 <Stars stars={element.stars} reviews={element.reviews} />
 
                 <div className="cart-btn">
