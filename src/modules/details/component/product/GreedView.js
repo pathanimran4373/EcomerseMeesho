@@ -26,7 +26,7 @@ const Product = () => {
                     width={200}
                     className="productImage"
                   /> */}
-                  <img className='product-image' src={element.image} loading='lazy' alt="product" />
+                  <img className='product-image' src={element.image} loading='lazy' alt="product" width="600" height="650"  />
                 </figure>
 
                 <h1>{element.name}</h1>
