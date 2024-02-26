@@ -312,3 +312,15 @@ body {
   margin-left: 317px;
   padding-bottom: 20px;
 }
+
+/* media query for mobile */
+@media only screen and (max-width:768px){
+ 
+  html{
+    font-size: 45%;
+  }
+  body{
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

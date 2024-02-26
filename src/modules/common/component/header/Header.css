@@ -15,7 +15,7 @@
 }
 .menuBar {
   margin: 0 10px 0 1px;
-  font-size: 2rem;
+  font-size: 4rem;
   display: none;
 }
 .logocontainer {
@@ -134,7 +134,7 @@
 .profileIcon,
 .cartIcon {
   width: 20px;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .profileContainer p,
 .CartContainer p {
@@ -147,9 +147,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  html {
-    font-size: 35%;
-  }
+ 
   .header-section {
     width: 100%;
     height: 17%;
@@ -176,13 +174,7 @@
   .logocontainer img {
     width: 100px;
   }
-  .searchBox {
-    width: 80% !important;
-    position: absolute !important;
-    top: 60%;
-    margin: 0 auto;
-    left: 2%;
-  }
+ 
   .becomeSupplierContainer,
   .downloadContainer {
     display: none;
@@ -190,6 +182,10 @@
   .searchInput::placeholder {
     font-size: 15px !important;
   }
+  .profileIcon,
+.cartIcon {
+  font-size: 3.5rem;
+}
   .profileAndCart p {
     display: none;
   }
