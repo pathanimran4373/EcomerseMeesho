@@ -37,3 +37,12 @@
 display: none;
     font-size: 20px;
 }
+@media only screen and (max-width:768px){
+ 
+  .searchBox {
+    width: 85% !important;
+    position: absolute !important;
+    top: 60%;
+    left: 1px;
+  }
+}

@@ -12,7 +12,7 @@ function SearchBox() {
     <>
       <div className='searchBox'>
         
-          <input type='text'  className='searchInput' placeholder="Try Saree, kurti or search by product code"/>
+          <input type='text'  className='searchInput' placeholder="Try Saree, kurti or search product "/>
           <div className='searchIconContainer'>
             <FaSistrix className='searchIcon'/>
             <FaTimes className='disableSearchIcon'/>

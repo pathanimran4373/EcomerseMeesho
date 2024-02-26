@@ -87,9 +87,6 @@
 }
 
 @media (max-width: 768px) {
-  html {
-    font-size: 35%;
-  }
   .lowestpriceContainer {
     flex-direction: column-reverse;
     /* margin-top: -750px !important; */
@@ -108,5 +105,12 @@
     margin: 0 !important;
     margin-top: -200px !important;
   }
-  
+  .lowestpriceItem p {
+    font-size: 2rem;
+    padding: 0 !important;
+    margin-left: 3px;
+  }
+  .lowestpriceItem{
+    padding: 0 3px !important;
+  }
 }

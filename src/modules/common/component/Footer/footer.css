@@ -36,8 +36,4 @@
 .footer .list .yt {
   color: rgb(0, 68, 255);
 }
-@media only screen and (max-width: 768px) {
-  html {
-    font-size: 35%;
-  }
-}
+
