@@ -29,11 +29,11 @@ const Product = () => {
                   <img className='product-image' src={element.image} loading='lazy' alt="product" />
                 </figure>
 
-                <h3>{element.name}</h3>
+                <h1>{element.name}</h1>
                 <Stars stars={element.stars} reviews={element.reviews} />
 
                 <div className="cart-btn">
-                  <p>$.{element.price}</p>
+                  <h2>$.{element.price}</h2>
                   <button className="view-btn">view details</button>
                 </div>
               </div>
